@@ -13,3 +13,5 @@ jobs:
       uses: ./
       with:
         who-to-greet: "Mona the Octocat"
+    - name: Run the test
+      uses: ./test.yml
