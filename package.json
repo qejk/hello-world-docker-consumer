@@ -1,0 +1,12 @@
+{
+  "name": "hello-world-docker-consumer",
+  "version": "1.6.0",
+  "repository": "https://github.com/qejk/hello-world-docker-consumer",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo test",
+    "build": "echo build",
+    "lint": "echo lint"
+  }
+}
