@@ -7,13 +7,12 @@ jobs:
     steps:
       # To use this repository's private action,
       # you must check out the repository
-      - name: Checkout
-        uses: actions/checkout@v2-beta
-          with:
-            # Private version of https://github.com/actions/hello-world-docker-action
-            repository: qejk/hello-world-docker-action
-            token: ${{ secrets.GitHub_PAT }} # `GitHub_PAT` is a secret that contains your PAT to clone that private repo
-        - name: Run the private action
-          uses: ./
-          with:
-            who-to-greet: "Mona the Octocat"
+      -uses: actions/checkout@v2-beta
+        with:
+          # Private version of https://github.com/actions/hello-world-docker-action
+          repository: qejk/hello-world-docker-action
+          token: ${{ secrets.GitHub_PAT }} # `GitHub_PAT` is a secret that contains your PAT to clone that private repo
+      - name: Run the private action
+        uses: ./
+        with:
+          who-to-greet: "Mona the Octocat"
